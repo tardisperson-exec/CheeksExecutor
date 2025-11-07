@@ -30,16 +30,16 @@
         {
             this.AttachBTN = new System.Windows.Forms.Button();
             this.InfYeildBTN = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.quorumMonaco11 = new QuorumMonaco.QuorumMonaco1();
             this.ExecuteBTN = new System.Windows.Forms.Button();
+            this.isattached = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AttachBTN
             // 
-            this.AttachBTN.Location = new System.Drawing.Point(534, 13);
+            this.AttachBTN.Location = new System.Drawing.Point(382, 448);
             this.AttachBTN.Name = "AttachBTN";
-            this.AttachBTN.Size = new System.Drawing.Size(145, 23);
+            this.AttachBTN.Size = new System.Drawing.Size(145, 47);
             this.AttachBTN.TabIndex = 3;
             this.AttachBTN.Text = "Inject";
             this.AttachBTN.UseVisualStyleBackColor = true;
@@ -47,23 +47,13 @@
             // 
             // InfYeildBTN
             // 
-            this.InfYeildBTN.Location = new System.Drawing.Point(534, 151);
+            this.InfYeildBTN.Location = new System.Drawing.Point(12, 450);
             this.InfYeildBTN.Name = "InfYeildBTN";
             this.InfYeildBTN.Size = new System.Drawing.Size(66, 45);
             this.InfYeildBTN.TabIndex = 5;
             this.InfYeildBTN.Text = "IY";
             this.InfYeildBTN.UseVisualStyleBackColor = true;
             this.InfYeildBTN.Click += new System.EventHandler(this.InfYeildBTN_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(534, 202);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 240);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Is Attached?";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // quorumMonaco11
             // 
@@ -75,22 +65,32 @@
             // 
             // ExecuteBTN
             // 
-            this.ExecuteBTN.Location = new System.Drawing.Point(534, 66);
+            this.ExecuteBTN.Location = new System.Drawing.Point(231, 450);
             this.ExecuteBTN.Name = "ExecuteBTN";
-            this.ExecuteBTN.Size = new System.Drawing.Size(145, 79);
+            this.ExecuteBTN.Size = new System.Drawing.Size(145, 45);
             this.ExecuteBTN.TabIndex = 8;
             this.ExecuteBTN.Text = "Execute";
             this.ExecuteBTN.UseVisualStyleBackColor = true;
             this.ExecuteBTN.Click += new System.EventHandler(this.ExecuteBTN_Click);
             // 
+            // isattached
+            // 
+            this.isattached.Location = new System.Drawing.Point(85, 450);
+            this.isattached.Name = "isattached";
+            this.isattached.Size = new System.Drawing.Size(93, 43);
+            this.isattached.TabIndex = 9;
+            this.isattached.Text = "Is Attached?";
+            this.isattached.UseVisualStyleBackColor = true;
+            this.isattached.Click += new System.EventHandler(this.isattached_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 454);
+            this.ClientSize = new System.Drawing.Size(563, 505);
+            this.Controls.Add(this.isattached);
             this.Controls.Add(this.ExecuteBTN);
             this.Controls.Add(this.quorumMonaco11);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.InfYeildBTN);
             this.Controls.Add(this.AttachBTN);
             this.Name = "Form1";
@@ -103,9 +103,9 @@
         #endregion
         private System.Windows.Forms.Button AttachBTN;
         private System.Windows.Forms.Button InfYeildBTN;
-        private System.Windows.Forms.Button button1;
         private QuorumMonaco.QuorumMonaco1 quorumMonaco11;
         private System.Windows.Forms.Button ExecuteBTN;
+        private System.Windows.Forms.Button isattached;
     }
 }
 

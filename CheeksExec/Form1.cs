@@ -20,32 +20,28 @@ namespace CheeksExec
             quorum = new QuorumModule();
             quorum.StartCommunication();
         }
-
         private void AttachBTN_Click(object sender, EventArgs e)
         {
             quorum.AttachAPI();
         }
-
-
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             quorum.StopCommunication();
         }
-
         private void InfYeildBTN_Click(object sender, EventArgs e)
         {
             quorum.Execute("loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()");
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            bool isAttached = quorum.IsAttached();
-        }
-
         private async void ExecuteBTN_Click(object sender, EventArgs e)
         {
             string script = await QuorumMonaco.CoreFunctions.GetText();
             quorum.ExecuteScript(script);
+        }
+
+        private void isattached_Click(object sender, EventArgs e)
+        {
+            bool isAttached = quorum.IsAttached();
+            MessageBox.Show(isAttached ? "Attached" : "Not attached");
         }
     }
 }
