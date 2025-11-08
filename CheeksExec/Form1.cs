@@ -19,6 +19,7 @@ namespace CheeksExec
             InitializeComponent();
             quorum = new QuorumModule();
             quorum.StartCommunication();
+            QuorumMonaco.CoreFunctions.SetMonaco(quorumMonaco11);
         }
         private void AttachBTN_Click(object sender, EventArgs e)
         {
